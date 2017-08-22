@@ -4,9 +4,8 @@ This ClojureScript library uses Google Closure's MD5 class to generate Gravatar 
 
 ## Usage
 
-```
-[cljs-gravatar "0.1.0"]
-```
+[![Clojars Project](http://clojars.org/cljs-gravatar/latest-version.svg)](https://clojars.org/cljs-gravatar)
+
 
 ```clojure
 (ns your-ns.core
@@ -18,6 +17,8 @@ This ClojureScript library uses Google Closure's MD5 class to generate Gravatar 
 ; https://secure.gravatar.com/avatar/8455938a1db5c475a87d76edacb6284e
 (println (gravatar/url "example@email.com" :size 50))
 ; https://secure.gravatar.com/avatar/8455938a1db5c475a87d76edacb6284e?s=50
+(println (gravatar/url "example@email.com" :rating :pg :default :retro))
+; https://secure.gravatar.com/avatar/8455938a1db5c475a87d76edacb6284e?r=pg&d=retro
 ```
 
 ## Testing
