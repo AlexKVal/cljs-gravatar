@@ -15,6 +15,9 @@ This ClojureScript library uses Google Closure's MD5 class to generate Gravatar 
 (enable-console-print!)
 
 (println (gravatar/url "example@email.com"))
+; https://secure.gravatar.com/avatar/8455938a1db5c475a87d76edacb6284e
+(println (gravatar/url "example@email.com" :size 50))
+; https://secure.gravatar.com/avatar/8455938a1db5c475a87d76edacb6284e?s=50
 ```
 
 ## Testing
