@@ -5,7 +5,7 @@
 
 (defn- digest [s]
   (let [hasher (goog.crypt.Md5.)]
-    (.update hasher (crypt/stringToUtf8ByteArray s))
+    (.update hasher (crypt/stringToUtf8ByteArray (str/lower-case s)))
     (crypt/byteArrayToHex (.digest hasher))))
 
 ; options are borrowed from

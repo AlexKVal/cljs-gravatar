@@ -1,4 +1,4 @@
-(defproject cljs-gravatar "0.1.1"
+(defproject cljs-gravatar "0.1.2"
   :description "Gravatar URL for ClojureScript. Uses Google Clojure's MD5."
   :url "https://github.com/alexkval/cljs-gravatar"
   :license {:name "Eclipse Public License"
